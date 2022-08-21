@@ -2,7 +2,7 @@ import { Router } from "express";
 import deleteCategoryController from "../controllers/category_constrollers/deleteCategory.controller.js";
 import createCategoryController from "../controllers/category_constrollers/createCategory.controller.js";
 import listCategoriesController from "../controllers/category_constrollers/listCategories.controller.js";
-import listCategoryController from "../controllers/category_constrollers/listCategory.controller.js.js";
+import listCategoryController from "../controllers/category_constrollers/listCategory.controller.js";
 import updateCategoryController from "../controllers/category_constrollers/uptadeCategory.controller.js";
 
 import verifyNameCategoryAlreadyExistsMiddleware from "../middlewares/verifyNameCategoryAlreadyExists.middleware.js";

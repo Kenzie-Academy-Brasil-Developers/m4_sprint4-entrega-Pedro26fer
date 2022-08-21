@@ -2,7 +2,11 @@ import createCategoryService from "../../services/category_services/createCatego
 
 const createCategoryController = async (req, res) => {
   const { name } = req.body;
-  console.log(req.body);
+
+  if(!name){
+    res.status(400).json({ message: 'Category no name'})
+  }
+  
   try {
     const newCategory = await createCategoryService(name);
 

@@ -1,12 +1,12 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
-CREATE TABLE categories(
+CREATE TABLE IF NOT EXISTS categories(
 	
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(200) UNIQUE NOT NULL);
     
     
-CREATE TABLE products(
+CREATE TABLE IF NOT EXISTS products(
 
 	id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
   	name VARCHAR(200) NOT NULL,
